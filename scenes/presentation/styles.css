@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+/* SECTION TOP HEADER */
+#top-header  {
+    background: #0E2245;
+    color: #CFE0FF;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#top-header div {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-nome {
+    font-weight: bold;
+    font-size: 50px;
+    margin-right: 32px;
+}
+
+#logo {
+    height: 45px;
+    margin: 8px;
+}
+
+.top-header-ajuda {
+    text-align: center;
+    align-self: center;
+    font-size: 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.primary-button {
+    border: none;
+    background-color: #CFE0FF;
+    padding: 16px 32px 16px 32px;
+    margin: 8px;
+    color: #0E2245;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.secundary-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #CFE0FF;
+    padding: 16px 32px 16px 32px;
+    color: #CFE0FF;
+    margin: 8px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/* SECTION PRESENTATION */
+
+#presentation {
+    margin: 0px 180px;
+}
+
+#presentation h1 {
+    font-size: 40px;
+    color: #0E2245;
+    text-align: center;
+    margin: 64px 0 64px;
+}
+
+#presentation p {
+    font-size: 30px;
+    color: #0E2245;
+    text-align: center;
+}
+
+
+/* SECTION CALL TO ACTION */
+#call-to-action {
+    background-color: #0E2245;
+    margin-top: 64px;
+    padding: 64px 128px 64px 128px;
+    color: #CFE0FF;
+    display: flex;
+    align-items: center;
+}
+
+#call-to-action h3 {
+    font-size: 30px;
+    margin: 16px 0 16px 0;
+}
+
+#call-to-action p {
+    color: white;
+    font-size: 20px;
+}
+
+#call-to-action-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #CFE0FF;
+    padding: 16px 32px;
+    color: #CFE0FF;
+    margin-top: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+#call-to-action-button img {
+    height: 20px;
+    margin-left: 8px;
+}
+
+#call-to-action-map {
+    margin-left: 64px;
+}
+
+
+/* SECTION CARDS */
+#cards {
+    margin: 64px 128px;
+}
+
+#cards div {
+    justify-content: space-around;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 32px 0;
+}
+
+#cards .item-card {
+    background-color: #CFE0FF;
+    color: #0E2245;
+    height: 200px;
+    width: 150px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#cards .item-card img {
+    height: 45px;
+    width: 60px;
+    margin: 16px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SECTION BANNER */
+#banner-content {
+    height: 400px;
+    background-size: cover;
+    background-image: url("../../assets/banner.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px;
+}
+
+#banner h3 {
+    width: 40%;
+    font-size: 30px;
+    color: white;
+}
+
+#banner p {
+    width: 50%;
+    font-size: 20px;
+    color: white;
+}
+
+#dots {
+    display: flex;
+    justify-content: center;
+}
+
+#dots .dot {
+    margin: 8px;
+    height: 20px;
+    width: 20px;
+    background-color: #CFE0FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dots .dot-selected {
+    margin: 8px;
+    height: 20px;
+    width: 20px;
+    background-color: #0E2245;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* SECTION CONTACT */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 64px 256px;
+}
+
+#contacts-info {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 16px;
+}
+
+.contact-card {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#contact h3 {
+    font-size: 30px;
+}
+
+#contact p {
+    font-size: 20px;
+    color: #0E2245;
+}
+
+#contact img {
+    height: 40px;
+    width: 60px;
+    margin: 16px;
+}
+
+/* SECTION FOOTER */
+#footer {
+    background-color: #0E2245;
+    color: #CFE0FF;
+    padding: 64px 128px;
+}
+
+#footer-logo {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content p {
+    margin: 8px;
+}
