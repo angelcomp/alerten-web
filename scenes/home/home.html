@@ -29,39 +29,67 @@
 </head>
 <body>
     <section id="top-header">
+        <div></div>
         <div>
             <img id="logo" src="../../assets/logo.png" alt="Logo Alerten">
             <h1 id="logo-nome">Alerten</h1>
         </div>
-        <div id="top-header-profile">
-            <span> Olá, <b> Angelica</b></span>
+        <div id="profile-container">
+            <div id="top-header-profile">
+                <span>Olá, <b> Angelica</b></span>
+            </div>
         </div>
     </section>
     <section id="map-dashboard">
-        <div id="map-content">
-            <div>
-                <h3>Conteudo mapa</h3>
-                <p>abluble abluble</p>
-                <p>abluble</p>
-                <p>abluble</p>
-                <p>abluble</p>
-                <p>abluble</p>
-                <button>botao botao</button>
-                <p>abluble</p>
-                <p>abluble</p>
-                <p>abluble</p>
-                <a href="">link</a>
-                <p>abluble</p>
-                <p>abluble</p>
-                <button>botao botao</button>
-                <button>botao botao</button>
+        <div id="map-content-form">
+            <div id="marker-form-data">
+                <h3>Preencha os dados da ocorrência</h3>
+                
+                <h4>Dados pessoais</h4>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="map-content-form-name" placeholder="Digite seu nome" maxlength="40">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="map-content-form-email" placeholder="Digite seu e-mail para contato" maxlength="50">
+
+                <label for="phone">Telefone</label>
+                <input type="text" name="phone" id="map-content-form-phone" placeholder="Digite seu telefone para contato (com DDD)" maxlength="11">
+
+                <h4>Dados da ocorrência</h4>
+
+                <label for="date">Data de hoje</label>
+                <input type="text" name="date" id="map-content-form-date" disabled placeholder="" maxlength="50">
+
+                <label for="address">Endereço</label>
+                <input type="text" name="address" id="map-content-form-address" disabled placeholder="" maxlength="50">
+
+                <div id="marker-form-data-lnglat">
+                    <div>
+                        <p>Latitude</p>
+                        <input id="lat" type="text" disabled title="Latitude">
+                    </div>
+                    <div>
+                        <p>Longitude</p>
+                        <input id="lng" type="text" disabled title="Longitude">
+                    </div>
+                </div>
+
+                <label for="description">Descrição da ocorrência</label>
+                <textarea name="" cols="30" rows="10" id="map-content-form-description" maxlength="550" wrap="soft" placeholder="Descreva resumidamente o ocorrido"></textarea>
+
+                <button id="marker-form-data-save" onclick="saveDataFromForm()">Salvar e enviar</button>
+                <button id="marker-form-data-cancel" onclick="clearForm()">Cancelar</button>
             </div>
         </div>
         <div id="map">
-            <img id="arrow-open-map" onclick="openMapcontent()" src="../../assets/arrow-open.png" alt="Abrir conteudo mapa">
+            <div>
+                <img id="arrow-open-map" onclick="openMapcontent()" src="../../assets/arrow-open.png" alt="Abrir conteudo mapa">
+                <img id="add-on-map" onclick="activeMap()" src="../../assets/plus-sign.png" alt="Adicionar marcador no mapa">
+                <p id="info-add-marker">Clique no mapa para adicionar um marcador</p>
+            </div>
         </div>
-        <button class="open-button" onclick="openForms()">Open Form</button>
     </section>
-    <script src="./script.js"></script>
+    <script src="./mapScript.js"></script>
+    <script src="./schoolDataMapScript.js"></script>
 </body>
 </html>
