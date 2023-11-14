@@ -1,0 +1,395 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56504819,
+                    -21.78887801
+                ]
+            },
+            "id": "2f0ba17a-7be4-40d5-a909-d128279ec631",
+            "properties": {
+                "name": "Central Cursos",
+                "address": "R. Rio Grande do Sul, 1177 - Centro, Po\u00e7os de Caldas - MG, 37701-001"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.5939637,
+                    -21.79231672
+                ]
+            },
+            "id": "0c29f1b5-94e9-44aa-94c3-a1c430bfbfc4",
+            "properties": {
+                "name": "Escola Estadual Professor Arlindo Pereira  Centro de Educa\u00e7\u00e3o Polit\u00e9cnica",
+                "address": "Avenida Padre Cletus Francis Cox, 400  Country Club  CEP 37.701-355"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.57177101,
+                    -21.78239556
+                ]
+            },
+            "id": "03a02453-b8af-4338-9b9b-2973e8c1174f",
+            "properties": {
+                "name": "Centro Educacional Inova\u00e7\u00e3o",
+                "address": "Rua Para\u00edba, 95 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.5718897,
+                    -21.78452633
+                ]
+            },
+            "id": "390bdbd5-b1f6-43fe-ae4c-8cea413616bc",
+            "properties": {
+                "name": "Col\u00e9gio Integral Po\u00e7os de Caldas",
+                "address": "Praca Get\u00falio Vargas, 4 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.58933062,
+                    -21.78455837
+                ]
+            },
+            "id": "e734857f-2058-43f1-a159-6b572a88b3dd",
+            "properties": {
+                "name": "CESEC Professora Helo\u00edsa Lacerda",
+                "address": "Av. Jo\u00e3o Pinheiro, 1672  Vila Cruz  CEP 37.701-386"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56669721,
+                    -21.84835659
+                ]
+            },
+            "id": "0e7f3837-ea4c-4d57-a661-7bd556bf8ba4",
+            "properties": {
+                "name": "Escola Estadual de Ensino Fundamental e M\u00e9dio",
+                "address": "Avenida Portugal, s/n\u00ba  P arque das Na\u00e7\u00f5es  CEP 37.706-189"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.58251002,
+                    -21.80204265
+                ]
+            },
+            "id": "12442e22-f6c1-46ad-b250-24f8ab3039f4",
+            "properties": {
+                "name": "Col\u00e9gio Vis\u00e3o",
+                "address": "Av. Lisboa, 943 - Jardim Europa, Po\u00e7os de Caldas - MG"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56628689,
+                    -21.78225044
+                ]
+            },
+            "id": "4125d119-d4e0-422e-a2ee-6b4e172ad3bd",
+            "properties": {
+                "name": "Escola 7 de Setembro",
+                "address": "Rua Cear\u00e1, 321 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56608941,
+                    -21.80670845
+                ]
+            },
+            "id": "18090342-d9d1-4dd6-95df-95f7dd7be482",
+            "properties": {
+                "name": "Escola Estadual Professora Cleusa Lovato Caliari",
+                "address": "Rua Luiz Zangiacomi, 48  Jardim Centen\u00e1rio  CEP 37.704-274"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56569624,
+                    -21.7925157
+                ]
+            },
+            "id": "fcd912fa-fbcc-486f-8aab-2740f35a7387",
+            "properties": {
+                "name": "Col\u00e9gio Jesus Maria Jos\u00e9",
+                "address": "Rua Rio Grande do Sul, 1483 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56715958,
+                    -21.78202886
+                ]
+            },
+            "id": "a5f43b84-4b32-4efd-ac82-29322f5f0771",
+            "properties": {
+                "name": "Col\u00e9gio Pelicano",
+                "address": "Rua Minas Gerais, 334 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56075709,
+                    -21.79796268
+                ]
+            },
+            "id": "ba30e940-cd2b-4d8f-8678-78e29afe0b07",
+            "properties": {
+                "name": "Cepoc - Centro Educacional Po\u00e7os",
+                "address": "Rua Vivaldi Leite Ribeiro, 863 Cascatinha"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.5542316,
+                    -21.79201385
+                ]
+            },
+            "id": "24b02d6e-0528-4aa3-9940-72a262d4d79f",
+            "properties": {
+                "name": "Escola Estadual Doutor Jo\u00e3o Eug\u00eanio de Almeida",
+                "address": "Rua Mato Grosso do Sul, 155 Jardim S\u00e3o Paulo  CEP 37.701-153"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.55508577,
+                    -21.78882539
+                ]
+            },
+            "id": "24751f58-cd42-4786-b352-7a0a5077571b",
+            "properties": {
+                "name": "Escola Estadual Dona Francisca Tamm Bias Fortes",
+                "address": "Rua Capit\u00e3o Maneco Junqueira, 65  Nossa Senhora Aparecida  CEP 37.701-137"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.57143342,
+                    -21.78819391
+                ]
+            },
+            "id": "ad5ac2e5-1cc8-4439-970c-5e4717703a74",
+            "properties": {
+                "name": "Escola Criativa Idade Sistema Educacional",
+                "address": "Rua Doutor Francisco Faria Lobato, 152 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.55315544,
+                    -21.7862133
+                ]
+            },
+            "id": "bf35cf61-287b-4b1b-8742-7a1f6d813943",
+            "properties": {
+                "name": "Escola Estadual Francisco Escobar",
+                "address": "Rua Newton Delgado, 105  Jos\u00e9 Carlos  CEP 37.701-116"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56295765,
+                    -21.85134564
+                ]
+            },
+            "id": "c92b7407-e762-4b8d-82ad-74d1bae138de",
+            "properties": {
+                "name": "Escola Estadual Professor Jos\u00e9 Castro de Ara\u00fajo",
+                "address": "Avenida Yolanda Junqueira de Mello, 31  CoHab  CEP 37.706-179"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56482783,
+                    -21.79186424
+                ]
+            },
+            "id": "d96b9b20-58e3-419c-b655-4fd0fd8922b3",
+            "properties": {
+                "name": "Col\u00e9gio Pio XII",
+                "address": "Rua 15 de Novembro, 74 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56200431,
+                    -21.78954539
+                ]
+            },
+            "id": "60317eaa-6fb5-4be8-ab21-d55fd6d932d8",
+            "properties": {
+                "name": "Centro Educacional Primeiro Espa\u00e7o",
+                "address": "Rua Doutor M\u00e1rio Mour\u00e3o, 64 S\u00e3o Benedito"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.52480947,
+                    -21.79648607
+                ]
+            },
+            "id": "8acb2b47-4646-443e-b0fb-e890c12ebc9e",
+            "properties": {
+                "name": "Escola Estadual Doutor Edmundo Gouv\u00eaa Cardillo",
+                "address": "Rua Coronel Virg\u00edlio Silva, 4110  Ch\u00e1cara Alvorada  CEP 37.701-103"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.5731049,
+                    -21.78287557
+                ]
+            },
+            "id": "9e99456b-9823-47ba-b3b1-f9645c90b2fd",
+            "properties": {
+                "name": "Escola Col\u00e9gio Objetivo",
+                "address": "Rua Padre Henri Mothon, 52 Centro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56239734,
+                    -21.78211399
+                ]
+            },
+            "id": "9f35de7e-3655-4730-ad11-564a8446e36c",
+            "properties": {
+                "name": "Col\u00e9gio F\u00eanix",
+                "address": "Rua Terez\u00f3polis, 57 Jd Estados"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56960962,
+                    -21.78186425
+                ]
+            },
+            "id": "2891da72-3b59-42db-b4c7-a8e0114e2a75",
+            "properties": {
+                "name": "Escola Estadual David Campista",
+                "address": "Rua Mato Grosso, 110  Centro  CEP 37.701-006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.5800446,
+                    -21.78587853
+                ]
+            },
+            "id": "1521db70-2311-42f9-ad7f-4bc0bc88324f",
+            "properties": {
+                "name": "Evident S/S",
+                "address": "Avenida Jo\u00e3o Pinheiro, 757 Campo da Mogiana"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.55770664,
+                    -21.78505711
+                ]
+            },
+            "id": "58efabdf-0bb2-4f18-81f9-bae7fb3c0ccc",
+            "properties": {
+                "name": "Crescimento Sistema de Ensino",
+                "address": "Rua Tutoia, 372 Jd Estados"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56095175,
+                    -21.78456095
+                ]
+            },
+            "id": "585ba93e-db98-4bc5-979d-fe4c6374030f",
+            "properties": {
+                "name": "Pre Escola Bilingue Happy Days",
+                "address": "Rua Tutoia, 28 Jardim Estados"
+            }
+        }
+    ]
+}
