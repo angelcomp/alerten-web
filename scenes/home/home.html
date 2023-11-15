@@ -61,7 +61,7 @@
                 <input type="text" name="date" id="map-content-form-date" disabled placeholder="" maxlength="50">
 
                 <label for="address">Endereço</label>
-                <input type="text" name="address" id="map-content-form-address" disabled placeholder="" maxlength="50">
+                <input type="text" name="address" id="map-content-form-address" disabled placeholder="Rua bla bla 12 - centro" maxlength="50">
 
                 <div id="marker-form-data-lnglat">
                     <div>
@@ -75,7 +75,7 @@
                 </div>
 
                 <label for="description">Descrição da ocorrência</label>
-                <textarea name="" cols="30" rows="10" id="map-content-form-description" maxlength="550" wrap="soft" placeholder="Descreva resumidamente o ocorrido"></textarea>
+                <textarea name="" cols="30" rows="5" id="map-content-form-description" maxlength="550" wrap="soft" placeholder="Descreva resumidamente o ocorrido"></textarea>
 
                 <button id="marker-form-data-save" onclick="saveDataFromForm()">Salvar e enviar</button>
                 <button id="marker-form-data-cancel" onclick="clearForm()">Cancelar</button>
@@ -83,7 +83,7 @@
         </div>
         <div id="map">
             <div>
-                <img id="arrow-open-map" onclick="openMapcontent()" src="../../assets/arrow-open.png" alt="Abrir conteudo mapa">
+                <img id="see-marker-list" onclick="openMarkerList()" src="../../assets/menu-icon.png" alt="Abrir lista dos marcadores do mapa">
                 <img id="add-on-map" onclick="activeMap()" src="../../assets/plus-sign.png" alt="Adicionar marcador no mapa">
                 <p id="info-add-marker">Clique no mapa para adicionar um marcador</p>
             </div>

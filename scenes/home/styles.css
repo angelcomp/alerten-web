@@ -9,7 +9,7 @@ body {
 
 /* SECTION TOP HEADER */
 #top-header  {
-    height: 10%;
+    height: 5%;
     color: #0E2245;
     display: flex;
     padding: 16px;
@@ -48,7 +48,7 @@ body {
 #map-dashboard {
     display: grid;
     grid-template-columns: 1fr;
-    height: 85%;
+    height: 95%;
 }
 
 #map-content-form {
@@ -118,9 +118,10 @@ body {
 #map {
     display: fixed;
     min-height: 500px;
+    
 }
 
-#arrow-open-map {
+/* #arrow-open-map {
     height: 25px;
     width: 25px;
     z-index: 999;
@@ -136,6 +137,24 @@ body {
 
 #arrow-open-map:hover {
     background-color: #CFE0FF;
+} */
+
+#see-marker-list {
+    height: 25px;
+    width: 25px;
+    z-index: 999;
+    margin: 16px;
+    background-color: white;
+    padding: 8px;
+    position: fixed;
+    top: 100px;
+    cursor: pointer;
+    border: 2px solid #0E2245;
+    border-radius: 16px;
+}
+
+#see-marker-list:hover {
+    background-color: #CFE0FF;
 }
 
 #add-on-map {
@@ -146,7 +165,7 @@ body {
     background-color: white;
     padding: 8px;
     position: fixed;
-    top: 100px;
+    top: 150px;
     cursor: pointer;
     border: 2px solid #0E2245;
     border-radius: 16px;
