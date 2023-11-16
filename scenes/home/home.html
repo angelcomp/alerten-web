@@ -41,27 +41,33 @@
         </div>
     </section>
     <section id="map-dashboard">
-        <div id="map-content-form">
+        <div id="map-aside-content">
+            <div id="school-list-content">
+                <div id="school-list-content-header">
+                    <h2>Lista dos marcadores no mapa</h2>
+                    <img onclick="closeList()" src="../../assets/plus-sign.png" alt="Fechar lista de marcadores">
+                </div>
+            </div>
             <div id="marker-form-data">
-                <h3>Preencha os dados da ocorrência</h3>
+                <h2>Preencha os dados da ocorrência</h2>
                 
                 <h4>Dados pessoais</h4>
                 <label for="name">Nome</label>
-                <input type="text" name="name" id="map-content-form-name" placeholder="Digite seu nome" maxlength="40">
+                <input type="text" name="name" id="map-aside-content-name" placeholder="Digite seu nome" maxlength="40">
 
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="map-content-form-email" placeholder="Digite seu e-mail para contato" maxlength="50">
+                <input type="email" name="email" id="map-aside-content-email" placeholder="Digite seu e-mail para contato" maxlength="50">
 
                 <label for="phone">Telefone</label>
-                <input type="text" name="phone" id="map-content-form-phone" placeholder="Digite seu telefone para contato (com DDD)" maxlength="11">
+                <input type="text" name="phone" id="map-aside-content-phone" placeholder="Digite seu telefone para contato (com DDD)" maxlength="11">
 
                 <h4>Dados da ocorrência</h4>
 
                 <label for="date">Data de hoje</label>
-                <input type="text" name="date" id="map-content-form-date" disabled placeholder="" maxlength="50">
+                <input type="text" name="date" id="map-aside-content-date" disabled placeholder="" maxlength="50">
 
                 <label for="address">Endereço</label>
-                <input type="text" name="address" id="map-content-form-address" disabled placeholder="Rua bla bla 12 - centro" maxlength="50">
+                <input type="text" name="address" id="map-aside-content-address" disabled placeholder="Rua bla bla 12 - centro" maxlength="50">
 
                 <div id="marker-form-data-lnglat">
                     <div>
@@ -75,7 +81,7 @@
                 </div>
 
                 <label for="description">Descrição da ocorrência</label>
-                <textarea name="" cols="30" rows="5" id="map-content-form-description" maxlength="550" wrap="soft" placeholder="Descreva resumidamente o ocorrido"></textarea>
+                <textarea name="" cols="30" rows="5" id="map-aside-content-description" maxlength="550" wrap="soft" placeholder="Descreva resumidamente o ocorrido"></textarea>
 
                 <button id="marker-form-data-save" onclick="saveDataFromForm()">Salvar e enviar</button>
                 <button id="marker-form-data-cancel" onclick="clearForm()">Cancelar</button>

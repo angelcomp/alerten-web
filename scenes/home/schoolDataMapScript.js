@@ -1,3 +1,92 @@
+var schoolList = []
+
+fetch('../../geodata/escolas-pocos.geojson')
+.then((response) => response.json())
+.then((json) =>  {
+    json.features.map( (escola) => {
+        schoolList.push(escola)
+    })
+
+    showSchoolList()
+});
+
+var isSchoolListOpen = false
+
+function openMarkerList() {
+
+    document.getElementById("add-on-map").style.display = "none"
+    document.getElementById("see-marker-list").style.display = "none"
+
+    if (isAsideContentClosed && !isSchoolListOpen) {
+        document.getElementById("map-dashboard").style.gridTemplateColumns = "2fr 3fr";
+        document.getElementById("map-aside-content").style.display = "grid";
+        document.getElementById("marker-form-data").style.display = "none";
+        document.getElementById("school-list-content").style.display = "block";
+        isAsideContentClosed = false
+    } else {
+        document.getElementById("map-dashboard").style.gridTemplateColumns = "1fr";
+        document.getElementById("map-aside-content").style.display = "none";
+        document.getElementById("add-on-map").style.display = "block"
+        document.getElementById("school-list-content").style.display = "none";
+        isAsideContentClosed = true
+    }
+}
+
+function showSchoolList() {
+    
+    schoolList.map( (item) => {
+        
+        var div = document.createElement("div");
+        div.id = "marker-item"
+
+        var divInfo = document.createElement("div");
+        divInfo.id = "marker-item-info"
+        div.appendChild(divInfo)
+        
+        var h3 = document.createElement("h3")
+        h3.innerText = item.properties.name
+        divInfo.appendChild(h3)
+
+        var p = document.createElement("p")
+        p.innerText = item.properties.address
+        divInfo.appendChild(p)
+
+        var span = document.createElement("span")
+        span.innerText = item.geometry.coordinates
+        divInfo.appendChild(span)
+
+        var divButtons = document.createElement("div");
+        divButtons.id = "marker-item-buttons"
+        div.appendChild(divButtons)
+
+        var zoomButton = document.createElement("button")
+        zoomButton.id = "zoom-marker"
+        zoomButton.innerText = "Ver no mapa";
+        zoomButton.onclick = () => {
+            seeMarkerOnMap(item)
+        }
+        divButtons.appendChild(zoomButton)
+
+        var parentDiv = document.getElementById("school-list-content")
+        parentDiv.appendChild(div)
+    })
+}
+
+function seeMarkerOnMap(item) {
+    map.easeTo({
+        center: item.geometry.coordinates,
+        zoom: 18
+    });
+}
+
+function closeList() {
+    document.getElementById("map-aside-content").style.display = "none";
+    document.getElementById("map-dashboard").style.gridTemplateColumns = "1fr";
+    document.getElementById("add-on-map").style.display = "block"
+    document.getElementById("see-marker-list").style.display = "block"
+    isAsideContentClosed = true
+}
+
 map.on("load", () => {
     // Add the escola cluster image
     map.loadImage(

@@ -48,15 +48,69 @@ body {
 #map-dashboard {
     display: grid;
     grid-template-columns: 1fr;
-    height: 95%;
+    height: 90%;
 }
 
-#map-content-form {
+#map-aside-content {
+    overflow: auto;
     padding: 16px;
     display: none;
     border-radius: 0px 16px 16px 0px;
     box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.50);
     z-index: 999;
+}
+
+#school-list-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#school-list-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#school-list-content-header img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+#marker-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 12px;
+}
+
+#marker-item h3 {
+    margin: 0;
+}
+
+#marker-item span {
+    color: gray;
+}
+
+#marker-item-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#marker-item-buttons button {
+    cursor: pointer;
+    background-color: #4C75B8;
+    padding: 8px 16px;
+    margin: 8px 4px;
+    width: 150px;
+    border: none;
+    border-radius: 8px;
+    color: white;
 }
 
 #marker-form-data {
@@ -120,24 +174,6 @@ body {
     min-height: 500px;
     
 }
-
-/* #arrow-open-map {
-    height: 25px;
-    width: 25px;
-    z-index: 999;
-    margin: 16px;
-    background-color: white;
-    padding: 8px;
-    position: fixed;
-    top: 150px;
-    cursor: pointer;
-    border: 2px solid #0E2245;
-    border-radius: 16px;
-}
-
-#arrow-open-map:hover {
-    background-color: #CFE0FF;
-} */
 
 #see-marker-list {
     height: 25px;

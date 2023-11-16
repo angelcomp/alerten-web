@@ -21,18 +21,20 @@ scale.setUnit('kilometers');
 
 maplibregl.setRTLTextPlugin("https://unpkg.com/@mapbox/mapbox-gl-rtl-text@0.2.3/mapbox-gl-rtl-text.min.js");
 
-var isFormClosed = true
-
+var isAsideContentClosed = true
 function openForm() {
-    if (isFormClosed) {
+    if (isAsideContentClosed && !isAddMarkerActive) {
         document.getElementById("map-dashboard").style.gridTemplateColumns = "2fr 3fr";
-        document.getElementById("map-content-form").style.display = "grid";
-        isFormClosed = false
+        document.getElementById("map-aside-content").style.display = "grid";
+        document.getElementById("marker-form-data").style.display = "flex";
+        document.getElementById("school-list-content").style.display = "none";
+        isAsideContentClosed = false
     } else {
         document.getElementById("map-dashboard").style.gridTemplateColumns = "1fr";
-        document.getElementById("map-content-form").style.display = "none";
+        document.getElementById("map-aside-content").style.display = "none";
         document.getElementById("add-on-map").style.display = "block"
-        isFormClosed = true
+        document.getElementById("see-marker-list").style.display = "block"
+        isAsideContentClosed = true
     }
 }
 
@@ -40,7 +42,9 @@ var isAddMarkerActive = false
 map.on('click', this.addMarker.bind(this));
 
 function activeMap() {
+
     document.getElementById("add-on-map").style.display = "none"
+    document.getElementById("see-marker-list").style.display = "none"
 
     if(isAddMarkerActive) {
         document.getElementById("info-add-marker").style.display = "none";
@@ -78,18 +82,18 @@ function setLngLatDataOnForm(coordinates) {
     document.getElementById("lng").value = coordinates.lng
     document.getElementById("lat").value = coordinates.lat
 
-    document.getElementById("map-content-form-date").value = getDateNow()
+    document.getElementById("map-aside-content-date").value = getDateNow()
 }
 
 function saveDataFromForm() {
     var latValue = document.getElementById("lat").value.trim()
     var lngValue = document.getElementById("lng").value.trim()
-    var nameValue = document.getElementById("map-content-form-name").value.trim()
-    var emailValue = document.getElementById("map-content-form-email").value.trim()
-    var phoneValue = document.getElementById("map-content-form-phone").value.trim()
-    var descriptionValue = document.getElementById("map-content-form-description").value.trim()
+    var nameValue = document.getElementById("map-aside-content-name").value.trim()
+    var emailValue = document.getElementById("map-aside-content-email").value.trim()
+    var phoneValue = document.getElementById("map-aside-content-phone").value.trim()
+    var descriptionValue = document.getElementById("map-aside-content-description").value.trim()
 
-    // var addressValue = document.getElementById("map-content-form-address").value.trim()
+    // var addressValue = document.getElementById("map-aside-content-address").value.trim()
     var addressValue = "Rua bla bla 12 - centro" // mocked since we dont have an API to search the address by lng/lat
 
     if (
@@ -124,11 +128,11 @@ function saveDataFromForm() {
 function clearForm() {
     document.getElementById("lat").value = ""
     document.getElementById("lng").value = ""
-    document.getElementById("map-content-form-name").value = ""
-    document.getElementById("map-content-form-email").value = ""
-    document.getElementById("map-content-form-phone").value = ""
-    document.getElementById("map-content-form-date").value = ""
-    document.getElementById("map-content-form-description").value = ""
+    document.getElementById("map-aside-content-name").value = ""
+    document.getElementById("map-aside-content-email").value = ""
+    document.getElementById("map-aside-content-phone").value = ""
+    document.getElementById("map-aside-content-date").value = ""
+    document.getElementById("map-aside-content-description").value = ""
 
     openForm() // in this case it will close this content
     
@@ -146,12 +150,6 @@ function removeMarkerById(id) {
 }
 
 function getDateNow() {
-    // var date = new Date()
-    // var day = date.getDay()
-    // var month = date.getMonth()
-    // var year = date.getFullYear()
-
-    // return `${day}/${month}/${year}`
     var dt = new Date();
     var day = dt.getUTCDate()
     var month = dt.getUTCMonth()+1
