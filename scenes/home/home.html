@@ -42,9 +42,12 @@
     </section>
     <section id="map-dashboard">
         <div id="map-aside-content">
-            <div id="school-list-content">
-                <div id="school-list-content-header">
-                    <h2>Lista dos marcadores no mapa</h2>
+            <div id="list-content">
+                <div id="list-content-header">
+                    <div>
+                        <h2>Lista dos marcadores no mapa</h2>
+                        <button id="btn-hide-markers" onclick="hideMarkers()">Esconder/Mostrar marcadores</button>
+                    </div>
                     <img onclick="closeList()" src="../../assets/plus-sign.png" alt="Fechar lista de marcadores">
                 </div>
             </div>
@@ -96,6 +99,8 @@
         </div>
     </section>
     <script src="./mapScript.js"></script>
-    <script src="./schoolDataMapScript.js"></script>
+    <script src="./data-scripts/schoolDataMapScript.js"></script>
+    <script src="./data-scripts/safetyDataMapScript.js"></script>
+    <script src="./data-scripts/healthDataMapScript.js"></script>
 </body>
 </html>

@@ -60,22 +60,38 @@ body {
     z-index: 999;
 }
 
-#school-list-content {
+#list-content {
     display: flex;
     flex-direction: column;
 }
 
-#school-list-content-header {
+#list-content-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 8px;
 }
 
-#school-list-content-header img {
+#list-content-header img {
     width: 25px;
     height: 25px;
     cursor: pointer;
     transform: rotate(45deg);
+}
+
+#btn-hide-markers {
+    background: #4C75B8;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    width: 100%;
+    border: none;
+}
+
+#btn-hide-markers:hover {
+    background: lightgray;
+    color: #0E2245;
+    cursor: pointer;
 }
 
 #marker-item {
@@ -111,6 +127,11 @@ body {
     border: none;
     border-radius: 8px;
     color: white;
+}
+
+#marker-item-buttons button:hover {
+    background: lightgray;
+    color: #0E2245;
 }
 
 #marker-form-data {

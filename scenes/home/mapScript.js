@@ -9,7 +9,6 @@ const map = new maplibregl.Map({
     center: [-46.565015,  -21.7900],
     hash: true,
 }).addControl(new maplibregl.NavigationControl(), "top-right");
-// This plugin is used for right to left languages
 
 let scale = new maplibregl.ScaleControl({
     maxWidth: 100,
@@ -27,7 +26,7 @@ function openForm() {
         document.getElementById("map-dashboard").style.gridTemplateColumns = "2fr 3fr";
         document.getElementById("map-aside-content").style.display = "grid";
         document.getElementById("marker-form-data").style.display = "flex";
-        document.getElementById("school-list-content").style.display = "none";
+        document.getElementById("list-content").style.display = "none";
         isAsideContentClosed = false
     } else {
         document.getElementById("map-dashboard").style.gridTemplateColumns = "1fr";
@@ -49,10 +48,14 @@ function activeMap() {
     if(isAddMarkerActive) {
         document.getElementById("info-add-marker").style.display = "none";
         map.setLayoutProperty('escola', 'visibility', 'visible');
+        map.setLayoutProperty('seguranca', 'visibility', 'visible');
+        map.setLayoutProperty('saude', 'visibility', 'visible');
         isAddMarkerActive = false
     } else {
         document.getElementById("info-add-marker").style.display = "block";
         map.setLayoutProperty('escola', 'visibility', 'none');
+        map.setLayoutProperty('seguranca', 'visibility', 'none');
+        map.setLayoutProperty('saude', 'visibility', 'none');
         isAddMarkerActive = true
     }
 }
@@ -63,12 +66,7 @@ function addMarker(event) {
     if(isAddMarkerActive) {
         var coordinates = event.lngLat;
         
-        const markerPopup = new maplibregl.Popup({
-            closeOnClick: true,
-            className: "marker"
-        }).setHTML("<b> A popup that is shown when you click on a marker</b>");
-        
-        var marker = new maplibregl.Marker().setLngLat(coordinates).setPopup(markerPopup).addTo(map);
+        var marker = new maplibregl.Marker().setLngLat(coordinates).addTo(map);
         
         allMarkers[lastUncreatedMarkerId] = marker
         
@@ -93,7 +91,6 @@ function saveDataFromForm() {
     var phoneValue = document.getElementById("map-aside-content-phone").value.trim()
     var descriptionValue = document.getElementById("map-aside-content-description").value.trim()
 
-    // var addressValue = document.getElementById("map-aside-content-address").value.trim()
     var addressValue = "Rua bla bla 12 - centro" // mocked since we dont have an API to search the address by lng/lat
 
     if (
@@ -119,6 +116,15 @@ function saveDataFromForm() {
             }
         }
         console.log(occurrence)
+
+        var marker = allMarkers[lastUncreatedMarkerId]
+
+        const markerPopup = new maplibregl.Popup({
+            closeOnClick: true,
+            className: "marker"
+        }).setHTML("<b>" + descriptionValue + "</b>");
+
+        marker.setPopup(markerPopup)
 
         lastUncreatedMarkerId = -1 // since the marker was created, setting id to -1 (default)
         clearForm()
@@ -155,4 +161,21 @@ function getDateNow() {
     var month = dt.getUTCMonth()+1
     var year = dt.getUTCFullYear()
     return (day + '/' + month) + '/' + year
+}
+
+var isMarkersHidden = false
+function hideMarkers() {
+
+    if(isMarkersHidden) {
+        map.setLayoutProperty('escola', 'visibility', 'visible');
+        map.setLayoutProperty('seguranca', 'visibility', 'visible');
+        map.setLayoutProperty('saude', 'visibility', 'visible');
+        isMarkersHidden = false
+    } else {
+        map.setLayoutProperty('escola', 'visibility', 'none');
+        map.setLayoutProperty('seguranca', 'visibility', 'none');
+        map.setLayoutProperty('saude', 'visibility', 'none');
+        isMarkersHidden = true
+    }
+    
 }

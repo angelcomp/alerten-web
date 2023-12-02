@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.591808917505205,
+                    -21.788406457707424
+                ]
+            },
+            "id": "8",
+            "properties": {
+                "name": "Corpo de Bombeiros Militar de Minas Gerais",
+                "address": "R. São José, 383 - Country Club, Poços de Caldas - MG, 37704-467"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.5584508508114,
+                    -21.787103403683982
+                ]
+            },
+            "id": "9",
+            "properties": {
+                "name": "Polícia Militar de Minas Gerais",
+                "address": "R. Antônio Pereira Guimarães, 948 - Centro, Poços de Caldas - MG, 37701-105"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.5509060250324,
+                    -21.785026400383295
+                ]
+            },
+            "id": "10",
+            "properties": {
+                "name": "Polícia Civil de Minas Gerais",
+                "address": "Av. José Remígio Prezia, 502 - Jardim dos Estados, Poços de Caldas - MG, 37701-102"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.470172707353434,
+                    -21.808445193716
+                ]
+            },
+            "id": "11",
+            "properties": {
+                "name": "Polícia Federal",
+                "address": "Poços de Caldas - State of Minas Gerais"
+            }
+        }
+    ]
+}

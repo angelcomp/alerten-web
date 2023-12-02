@@ -390,6 +390,111 @@
                 "name": "Pre Escola Bilingue Happy Days",
                 "address": "Rua Tutoia, 28 Jardim Estados"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.59374937296127, 
+                    -21.79149635600398
+                ]
+            },
+            "id": "1",
+            "properties": {
+                "name": "Universidade do Estado de Minas Gerais (UEMG)",
+                "address": "R - Av. Padre Cletus Francis Cox, 300 - Country Club, Poços de Caldas - MG, 37701-355"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.6624054626508,
+                    -21.820169113751497 
+                ]
+            },
+            "id": "2",
+            "properties": {
+                "name": "Universidade Federal de Alfenas (UNIFAL-MG)",
+                "address": "Rodovia José Aurélio Vilela,BR 267, Km 533 11999 - Cidade Universitária, MG, 37715-400"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56448268745456,
+                    -21.79238417083346
+                ]
+            },
+            "id": "3",
+            "properties": {
+                "name": "Faculdade de Poços de Caldas (FPC)",
+                "address": "Jardim do Ginasio, Poços de Caldas - State of Minas Gerais, 37701-386"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.58265545598294,
+                    -21.78512227762173
+                ]
+            },
+            "id": "4",
+            "properties": {
+                "name": "Faculdade Pitágoras Poços de Caldas",
+                "address": "Av. João Pinheiro, 1046 - Centro, Poços de Caldas - MG, 37701-386"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56781248381863,
+                    -21.78738572985598
+                ]
+            },
+            "id": "5",
+            "properties": {
+                "name": "Faculdade Estácio Poços de Caldas",
+                "address": "R. Minas Gerais, 807 - LJ. 03 - Centro, Poços de Caldas - MG, 35500-007"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.54736083100862,
+                    -21.782346113574135
+                ]
+            },
+            "id": "6",
+            "properties": {
+                "name": "Faculdade Senac Poços de Caldas",
+                "address": "R. Cerro Azul, 525 - Jardim dos Estados, Poços de Caldas - MG, 37701-093"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.59783755558958,
+                    -21.79951706656625
+                ]
+            },
+            "id": "7",
+            "properties": {
+                "name": "Pontifícia Universidade Católica de Minas Gerais, Poços de Caldas",
+                "address": "Av. Padre Cletus Francis Cox, 1661 - Country Club, Poços de Caldas - MG, 37714-620"
+            }
         }
     ]
 }

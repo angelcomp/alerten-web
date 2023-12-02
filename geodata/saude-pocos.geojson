@@ -1,0 +1,50 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56387819085912,
+                    -21.779503751611557
+                ]
+            },
+            "id": "11",
+            "properties": {
+                "name": "Secretaria de Estado de Saúde de Minas Gerais",
+                "address": "R. Pará, 284 - Centro, Poços de Caldas - MG, 37701-026"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.56675080260383,
+                    -21.780873197129626
+                ]
+            },
+            "id": "12",
+            "properties": {
+                "name": "Hospital Regional de Poços de Caldas",
+                "address": "Praça Francisco Escobar, s/n - Centro, Poços de Caldas - MG, 37701-027"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.550642195538856,
+                    -21.785783531355687
+                ]
+            },
+            "id": "13",
+            "properties": {
+                "name": "Unidade de Pronto Atendimento (UPA)",
+                "address": "R. Bandeira do Sul, s/n - Vila Jose Carlos, Poços de Caldas - MG, 37701-117"
+            }
+        }
+    ]
+}
