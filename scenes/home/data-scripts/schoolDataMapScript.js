@@ -137,6 +137,7 @@ map.on("load", () => {
             "text-field": [
                 "step",
                 ["get", "point_count"],
+                "",
                 2,
                 ["step", ["get", "point_count"], ["get", "point_count"], 20, "20+"],
             ],
