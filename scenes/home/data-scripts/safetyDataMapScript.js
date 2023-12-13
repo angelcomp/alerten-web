@@ -1,6 +1,6 @@
 var safetyList = []
 
-fetch('../../../geodata/seguranca-pocos.geojson')
+fetch('https://raw.githubusercontent.com/angelcomp/alerten-web/main/geodata/seguranca-pocos.geojson')
 .then((response) => response.json())
 .then((json) =>  {
     json.features.map( (seguranca) => {
@@ -102,7 +102,7 @@ map.on("load", () => {
 
     map.addSource("segurancas", {
         type: "geojson",
-        data: "../../geodata/seguranca-pocos.geojson",
+        data: "https://raw.githubusercontent.com/angelcomp/alerten-web/main/geodata/seguranca-pocos.geojson",
         cluster: true,
         clusterRadius: 50,
     });

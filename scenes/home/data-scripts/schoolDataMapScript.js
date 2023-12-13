@@ -1,6 +1,6 @@
 var schoolList = []
 
-fetch('../../../geodata/escolas-pocos.geojson')
+fetch('https://raw.githubusercontent.com/angelcomp/alerten-web/main/geodata/escolas-pocos.geojson')
 .then((response) => response.json())
 .then((json) =>  {
     json.features.map( (escola) => {
@@ -102,7 +102,7 @@ map.on("load", () => {
 
     map.addSource("escolas", {
         type: "geojson",
-        data: "../../../geodata/escolas-pocos.geojson",
+        data: "https://raw.githubusercontent.com/angelcomp/alerten-web/main/geodata/escolas-pocos.geojson",
         cluster: true,
         clusterRadius: 50,
     });

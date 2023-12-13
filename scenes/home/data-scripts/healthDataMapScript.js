@@ -1,6 +1,6 @@
 var healthList = []
 
-fetch('../../../geodata/saude-pocos.geojson')
+fetch('https://raw.githubusercontent.com/angelcomp/alerten-web/main/geodata/saude-pocos.geojson')
 .then((response) => response.json())
 .then((json) =>  {
     json.features.map( (saude) => {
@@ -102,7 +102,7 @@ map.on("load", () => {
 
     map.addSource("saudes", {
         type: "geojson",
-        data: "../../geodata/saude-pocos.geojson",
+        data: "https://raw.githubusercontent.com/angelcomp/alerten-web/main/geodata/saude-pocos.geojson",
         cluster: true,
         clusterRadius: 50,
     });
