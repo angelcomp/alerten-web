@@ -122,7 +122,10 @@ function saveDataFromForm() {
         const markerPopup = new maplibregl.Popup({
             closeOnClick: true,
             className: "marker"
-        }).setHTML("<b>" + descriptionValue + "</b>");
+        }).setHTML(`
+            <h4>${nameValue}</h4>
+            <p style="white-space: wrap">${descriptionValue}</p>
+        `); 
 
         marker.setPopup(markerPopup)
 
