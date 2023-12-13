@@ -89,13 +89,13 @@ function closeList() {
 
 map.on("load", () => {
     map.loadImage(
-        "../../../assets/health-marker-cluster.png",
+        "../../assets/health-marker-cluster.png",
         (error, image) => {
             if (error) throw error;
             map.addImage("saude-cluster", image);
         },
     );
-    map.loadImage("../../../assets/health-marker.png", (error, image) => {
+    map.loadImage("../../assets/health-marker.png", (error, image) => {
         if (error) throw error;
         map.addImage("saude", image);
     });
